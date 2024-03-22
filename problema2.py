@@ -7,5 +7,9 @@
 #         20 90 hola jiji 77
 #La salida debe ser
 #         (77, 'jiji', 'hola', 90, 20)
-t = input()
-print(t)
+
+entrada = input().split()
+entrada = [int(x) if x.isdigit() else x for x in entrada]
+t1 = tuple(entrada)
+t2 = t1[::-1]
+print(t2)
